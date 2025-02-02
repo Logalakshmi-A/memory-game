@@ -1,0 +1,34 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* Centering Grid */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 120px); /* 4 columns */
+  grid-template-rows: repeat(3, 120px); /* 3 rows */
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+/* Card Styling */
+#grid img {
+  width: 120px;   /* Fixed width */
+  height: 120px;  /* Fixed height */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover; /* Prevents stretched images */
+}
+
+/* Flip Animation */
+#grid img:hover {
+  transform: scale(1.1);
+}
